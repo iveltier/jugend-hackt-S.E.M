@@ -1,9 +1,9 @@
 import socket
 
-SERVER_IP = "192.168.172.217" #server ip eingeben
-PORT = 12345
-
 def main():
+    SERVER_IP = input ("Server-IP eingeben: ").strip()
+    PORT = 12345
+
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.connect((SERVER_IP, PORT))
