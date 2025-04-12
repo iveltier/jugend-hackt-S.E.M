@@ -14,10 +14,10 @@ Bauen und Programmieren zweier Raspberry Pi damit sie verschlüsselte Nachrichte
 
 ## Name der Teilnehmer\*innen
 
-*Theodor, Phillip, Tillmann, Levi, Lukas, Jonathan, Constantin
+* Theodor, Phillip, Tillmann, Levi, Lukas, Jonathan, Constantin
 
 ## Name der begleitenden Mentor\*innen
 
-*Anna, Timo, Kostia
+* Anna, Timo, Kostia
 
 ## Foto des Prototypen
