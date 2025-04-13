@@ -40,8 +40,7 @@ now u can send messages alternately
 1. display machen + mit server / client connecten, nicht nur um messages zu sehen auch um ip einzugeben (?)
 2. case + display integration
 3. verschlüsselung (kryptographie, etc?)
-4. server soll eigenes wlan machen können (?, optional)
-5. alles in ein ausführbares programm stecken
-6. grafische oberfläche (?, optional)
+4. alles in ein ausführbares programm stecken
+
 
 alle (?), ist noch in Diskussion und/oder sind Vorschläge
