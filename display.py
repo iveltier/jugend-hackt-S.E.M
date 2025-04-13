@@ -1,8 +1,9 @@
 import board
-
+from datetime import datetime
 import displayio
 
 import terminalio
+import time
 
 
 # can try import bitmap_label below for alternative
@@ -73,45 +74,23 @@ inner_sprite = displayio.TileGrid(inner_bitmap, pixel_shader=inner_palette, x=BO
 splash.append(inner_sprite)
 
 
-# Draw some white squares
-
-sm_bitmap = displayio.Bitmap(8, 8, 1)
-
-sm_square = displayio.TileGrid(sm_bitmap, pixel_shader=color_palette, x=58, y=17)
-
-splash.append(sm_square)
-
-
-med_bitmap = displayio.Bitmap(16, 16, 1)
-
-med_square = displayio.TileGrid(med_bitmap, pixel_shader=color_palette, x=71, y=15)
-
-splash.append(med_square)
-
-
-lrg_bitmap = displayio.Bitmap(32, 32, 1)
-
-lrg_square = displayio.TileGrid(lrg_bitmap, pixel_shader=color_palette, x=91, y=28)
-
-splash.append(lrg_square)
-
-
 # Draw some label text
 
-text1 = "Gib Mate bitti"  # overly long to see where it clips
+text_area_upper = label.Label(terminalio.FONT, text="Platzhalter", color=0xFFFFFF, scale=2, x=8, y=16)
+splash.append(text_area_upper)
 
-text_area = label.Label(terminalio.FONT, text=text1, color=0xFFFFFF, x=8, y=8)
+text_area_lower = label.Label(terminalio.FONT, text="Platzhalter", color=0xFFFFFF, scale=2, x=8, y=48)
+splash.append(text_area_lower)
 
-splash.append(text_area)
+def refresh_display():
+    splash.hidden = False
+    splash.hidden = True
 
-text2 = "SH1107"
-
-text_area2 = label.Label(terminalio.FONT, text=text2, scale=2, color=0xFFFFFF, x=9, y=44)
-
-splash.append(text_area2)
-
-
-while True:
-
-    pass
+def set_text_upper(new_text):
+    text_area_upper.text = new_text
+    refresh_display()
+    
+def set_text_lower(new_text):
+    text_area_lower.text = new_text
+    refresh_display()
 
