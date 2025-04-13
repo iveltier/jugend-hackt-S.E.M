@@ -1,4 +1,5 @@
 import socket
+import display
 
 def get_local_ip():
     try:
@@ -14,16 +15,16 @@ def start_server():
     s.listen()
     
     ip = get_local_ip()
-    print(f"Server-IP: {ip}")
-    print("Warte auf Client...")  
+    display.set_text_upper(f"Server-IP: {ip}")
+    display.set_text_upper("Warte auf Client...")  
     
     conn, addr = s.accept()
-    print(f"Client {addr[0]} verbunden!")
+    display.set_text_upper(f"Client {addr[0]} verbunden!")
     
     while True:
         data = conn.recv(1024).decode()
         if not data: break
-        print("Client sagt:", data)
+        display.set_text_upper(f"{data}")
         conn.sendall(input("Antwort: ").encode())
 
 if __name__ == "__main__":

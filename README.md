@@ -3,7 +3,7 @@
 
 ## Projektbeschreibung
 Bauen und Programmieren zweier Raspberry Pi damit sie verschlüsselte Nachrichten/Dateien untereinander versenden.
-* Erstellen eines 3d Modells des Raspberry Pi 
+* Erstellen eines 3D Modells des Raspberry Pi 
 * Rahmen Designen und mit Laser Cutter bauen
 * Datenübertragung+Verschlüsselung programmieren
 * Raspberries zusammenfügen
@@ -14,7 +14,7 @@ Bauen und Programmieren zweier Raspberry Pi damit sie verschlüsselte Nachrichte
 
 ## Name der Teilnehmer\*innen
 
-* Theodor, Phillip, Tillmann, Levi, Lukas, Johnathan, Constantin
+* Theodor, Philip, Tillmann, Levi, Lukas, Johnathan, Constantin
 
 ## Name der begleitenden Mentor\*innen
 
