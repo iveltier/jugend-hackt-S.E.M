@@ -1,4 +1,4 @@
-# jugend-hackt-S.E.M.
+# jugend hackt dresden 2025 : S.E.M.
 
 ### S.E.M (Sender-Empfänger Modul)
 
