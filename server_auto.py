@@ -15,16 +15,16 @@ def start_server():
     
     ip = get_local_ip()
     print(f"Server-IP: {ip}")
-    print("Warte auf Client...")  
+    print("Waiting for client...")  
     
     conn, addr = s.accept()
-    print(f"Client {addr[0]} verbunden!")
+    print(f"Client {addr[0]} connected!")
     
     while True:
         data = conn.recv(1024).decode()
         if not data: break
-        print("Client sagt:", data)
-        conn.sendall(input("Antwort: ").encode())
+        print("📥 Client:", data)
+        conn.sendall(input("📤 Answer: ").encode())
 
 if __name__ == "__main__":
     start_server()

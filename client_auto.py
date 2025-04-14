@@ -1,26 +1,26 @@
 import socket
 
 def main():
-    SERVER_IP = input ("Server-IP eingeben: ").strip()
+    SERVER_IP = input ("Input Server-IP: ").strip()
     PORT = 12345
 
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.connect((SERVER_IP, PORT))
-            print("✅ Verbunden mit Server!")
+            print("✅ Connected to Server!")
             
             while True:
-                message = input("📤 Nachricht ('exit' zum Beenden): ")
+                message = input("📤 Message ('exit' to exit): ")
                 if message.lower() == "exit":
                     break
                 s.sendall(message.encode("utf-8"))
                 data = s.recv(1024)
-                print(f"📥 Server-Antwort: {data.decode('utf-8')}")
+                print(f"📥 Server-Answer: {data.decode('utf-8')}")
     
     except ConnectionRefusedError:
-        print("❌ Server nicht erreichbar. Ist er gestartet? IP/Port korrekt?")
+        print("❌ Cant connect to Server. Is the Server running? IP/Port correct? Are you in the same Wlan?")
     except Exception as e:
-        print(f"🔴 Fehler: {e}")
+        print(f"🔴 Error: {e}")
 
 if __name__ == "__main__":
     main()
