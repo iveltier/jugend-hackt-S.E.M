@@ -2,7 +2,7 @@
 
 ### S.E.M (Sender-Empfänger Modul)
 
-## Projektdescription
+## Projectdescription
 
 Build and program two Raspberry Pi 5s and send messages between them.
 
@@ -17,6 +17,9 @@ Build and program two Raspberry Pi 5s and send messages between them.
 #### supplies
 
 - 2x RPi 5 (only tested on RPi5, but should work on other ones too)
+  
+> if you want to use it on windows, you will have to use py and run the python files by ur self
+
 - wlan connection
 - input devices for both RPi's + power supply cable + wlan adapter (if needed)
 
