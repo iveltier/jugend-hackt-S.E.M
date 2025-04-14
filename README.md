@@ -4,12 +4,12 @@
 
 ## Projektbeschreibung
 
-Bauen und Programmieren zweier Raspberry Pi damit sie verschlüsselte Nachrichten/Dateien untereinander versenden.
+Bauen und Programmieren zweier Raspberry Pi 5 damit sie verschlüsselte Nachrichten/Dateien untereinander versenden.
 
-- Erstellen eines 3d Modells des Raspberry Pi
+- Erstellen eines 3d Modells des Raspberry Pi 5
 - Rahmen Designen und mit Laser Cutter bauen
 - Datenübertragung+Verschlüsselung programmieren
-- Raspberries zusammenfügen
+- RaspberryPi's zusammenfügen
 
 ## Github Link
 
@@ -35,12 +35,3 @@ server side has to run server_auto.py and wait for client
 client side has to run client_auto.py and type in the ip adress of the server side.
 now u can send messages alternately
 
-### todo
-
-1. display machen + mit server / client connecten, nicht nur um messages zu sehen auch um ip einzugeben (?)
-2. case + display integration
-3. verschlüsselung (kryptographie, etc?)
-4. alles in ein ausführbares programm stecken
-
-
-alle (?), ist noch in Diskussion und/oder sind Vorschläge
