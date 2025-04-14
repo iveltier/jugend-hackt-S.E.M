@@ -2,36 +2,18 @@
 
 ### jugend-hackt-dresden-2025
 
-## Projektbeschreibung
+this is a test branch, if you want just the programm, go to the main branch
 
-Bauen und Programmieren zweier Raspberry Pi 5 damit sie verschlüsselte Nachrichten/Dateien untereinander versenden.
+ssh1107 oled display feather wings
 
-- Erstellen eines 3d Modells des Raspberry Pi 5
-- Rahmen Designen und mit Laser Cutter bauen
-- Datenübertragung+Verschlüsselung programmieren
-- RaspberryPi's zusammenfügen
+![pins](/images/pins.png "pins for display")
+![concept](/images/concept.png "concept aus brainstorming")
 
-## Github Link
+blinka treiber
+https://docs.circuitpython.org/projects/display_text/en/latest/api.html#adafruit_display_text.bitmap_label.Label
+https://docs.circuitpython.org/en/latest/shared-bindings/displayio/
+https://pypi.org/project/adafruit-circuitpython-display-text/
 
-- https://github.com/iveltier/jugend-hackt-S.E.M.
+display.py funktioniert glaub nich ganz bzw client_auto.py
 
-## Name der Teilnehmer\*innen
-
-- Theodor, Phillip, Tillmann, Levi, Lukas, Johnathan, Constantin
-
-## Name der begleitenden Mentor\*innen
-
-- Anna, Timo, Kostia
-
-## Foto des Prototypen
-
-incoming (photo raspi, photo case)
-
-# how to use
-
-both devices have to be in the same network
-
-server side has to run server_auto.py and wait for client
-client side has to run client_auto.py and type in the ip adress of the server side.
-now u can send messages alternately
-
+maybe für display in git history nach commit suchen
