@@ -31,7 +31,8 @@ Build and program two Raspberry Pi 5s and send messages between them.
 
 ```sudo apt update &&
 sudo apt upgrade &&
-sudo apt install python && sudo apt install git
+sudo apt install python &&
+sudo apt install git
 ```
 
 #### 2. clone the repo
